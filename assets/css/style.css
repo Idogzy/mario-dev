@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+nav,
+h3,
+h2 {
+    font-family: 'Dancing Script', 'cursive';
+}
+
+.carousel-item img {
+    height: 90vh;
+    object-fit: contain;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 5%;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+img.about {
+    width: 65%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 800px) {
+    .carousel-slide {
+        width: 100vh;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+    }
+        .carousel-caption {
+            position: static;
+            bottom: 0;
+            font-size: 18px;
+        }
+}
